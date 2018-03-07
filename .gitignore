@@ -1,5 +1,5 @@
-
-# Created by https://www.gitignore.io/api/kicad,latex,sublimetext
+# REMOVE
+*.pdf
 
 ### KiCad ###
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
