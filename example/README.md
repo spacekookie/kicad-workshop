@@ -1,4 +1,8 @@
-# Project ideas
+# Symmetrical Waffle
+
+
+1. Make WS2812b schematic
+
 
 It needs to be several things
 
@@ -10,3 +14,12 @@ It needs to be several things
 - Warrant making a custom footprint
   - + Footprint library management
 -
+
+## Schools
+
+One library per
+
+ - Project
+ - Type
+ - Manufacturer
+ - Part
