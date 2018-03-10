@@ -7,9 +7,11 @@ A small and fun project to learn making PCBs with KiCAD.
   - Use AtMega 328
   - Use simple external FTDI programmer interface
   - Put LEDs on subsheet
-3. Make WS2812b footprint
-4. Associate footprints to schematics
-5. Lay out board
+3. Annotate schematic
+4. Make WS2812b footprint
+5. Associate footprints to schematics
+6. Generate netlist
+7. Lay out board
 
 
 ## Schools
