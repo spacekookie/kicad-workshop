@@ -1,0 +1,491 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:symwaf
+LIBS:symmetrical-waffle-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6400 3000 1450 900 
+U 5AA3D3AE
+F0 "LED Ring" 60
+F1 "LedRing.sch" 60
+F2 "VCC" I R 7850 3250 60 
+F3 "GND" I R 7850 3650 60 
+F4 "Signal" I R 7850 3450 60 
+$EndSheet
+$Comp
+L GND #PWR5
+U 1 1 5AA3DC72
+P 7950 3700
+F 0 "#PWR5" H 7950 3450 50  0001 C CNN
+F 1 "GND" H 7950 3550 50  0000 C CNN
+F 2 "" H 7950 3700 50  0001 C CNN
+F 3 "" H 7950 3700 50  0001 C CNN
+	1    7950 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR3
+U 1 1 5AA3DCA1
+P 7950 3200
+F 0 "#PWR3" H 7950 3050 50  0001 C CNN
+F 1 "VCC" H 7950 3350 50  0000 C CNN
+F 2 "" H 7950 3200 50  0001 C CNN
+F 3 "" H 7950 3200 50  0001 C CNN
+	1    7950 3200
+	1    0    0    -1  
+$EndComp
+Text Label 7950 3450 0    60   ~ 0
+LEDSignal
+Text Notes 8450 4150 2    60   ~ 0
+Ring of LEDs
+$Comp
+L ATMEGA328-AU U1
+U 1 1 5AA44AB3
+P 3950 4400
+F 0 "U1" H 3200 5650 50  0000 L BNN
+F 1 "ATMEGA328-AU" H 4200 3000 50  0000 L BNN
+F 2 "Housings_QFP:TQFP-32_7x7mm_Pitch0.8mm" H 3950 4400 50  0001 C CIN
+F 3 "" H 3950 4400 50  0001 C CNN
+	1    3950 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR12
+U 1 1 5AA44C73
+P 2850 5800
+F 0 "#PWR12" H 2850 5550 50  0001 C CNN
+F 1 "GND" H 2850 5650 50  0000 C CNN
+F 2 "" H 2850 5800 50  0001 C CNN
+F 3 "" H 2850 5800 50  0001 C CNN
+	1    2850 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5AA44DB8
+P 2450 3650
+F 0 "C2" H 2475 3750 50  0000 L CNN
+F 1 "1nF" H 2475 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2488 3500 50  0001 C CNN
+F 3 "" H 2450 3650 50  0001 C CNN
+	1    2450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5AA44E41
+P 2200 3650
+F 0 "C1" H 2225 3750 50  0000 L CNN
+F 1 "1nF" H 2225 3550 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2238 3500 50  0001 C CNN
+F 3 "" H 2200 3650 50  0001 C CNN
+	1    2200 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR2
+U 1 1 5AA44FFB
+P 2450 3100
+F 0 "#PWR2" H 2450 2950 50  0001 C CNN
+F 1 "VCC" H 2450 3250 50  0000 C CNN
+F 2 "" H 2450 3100 50  0001 C CNN
+F 3 "" H 2450 3100 50  0001 C CNN
+	1    2450 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR6
+U 1 1 5AA450DB
+P 2450 4000
+F 0 "#PWR6" H 2450 3750 50  0001 C CNN
+F 1 "GND" H 2450 3850 50  0000 C CNN
+F 2 "" H 2450 4000 50  0001 C CNN
+F 3 "" H 2450 4000 50  0001 C CNN
+	1    2450 4000
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3050 4650
+NoConn ~ 3050 4750
+$Comp
+L C C3
+U 1 1 5AA451F3
+P 2850 4250
+F 0 "C3" H 2875 4350 50  0000 L CNN
+F 1 "1nF" H 2875 4150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 2888 4100 50  0001 C CNN
+F 3 "" H 2850 4250 50  0001 C CNN
+	1    2850 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3650 7950 3650
+Wire Wire Line
+	7950 3650 7950 3700
+Wire Wire Line
+	7850 3250 7950 3250
+Wire Wire Line
+	7950 3250 7950 3200
+Wire Wire Line
+	7850 3450 7950 3450
+Wire Notes Line
+	6150 2700 8500 2700
+Wire Notes Line
+	8500 2700 8500 4200
+Wire Notes Line
+	8500 4200 6150 4200
+Wire Wire Line
+	3050 5400 2850 5400
+Wire Wire Line
+	2850 4400 2850 5800
+Wire Wire Line
+	2850 5500 3050 5500
+Wire Wire Line
+	2850 5600 3050 5600
+Connection ~ 2850 5500
+Connection ~ 2850 5600
+Wire Wire Line
+	2200 3400 3050 3400
+Wire Wire Line
+	2200 3400 2200 3500
+Connection ~ 2450 3400
+Wire Wire Line
+	2850 3600 3050 3600
+Connection ~ 2850 3400
+Wire Wire Line
+	2450 3100 2450 3500
+Wire Wire Line
+	2850 3300 2850 3600
+Wire Wire Line
+	2850 3300 3050 3300
+Wire Wire Line
+	2200 3800 2200 3900
+Wire Wire Line
+	2200 3900 2450 3900
+Wire Wire Line
+	2450 3800 2450 4000
+Connection ~ 2450 3900
+Wire Wire Line
+	3050 3900 2850 3900
+Wire Wire Line
+	2850 3900 2850 4100
+Connection ~ 2850 5400
+Wire Notes Line
+	6150 4200 6150 2700
+Wire Notes Line
+	5950 6100 5950 2700
+Wire Notes Line
+	5950 2700 1650 2700
+Wire Notes Line
+	1650 2700 1650 6100
+Wire Notes Line
+	1650 6100 5950 6100
+Text Label 5100 4150 0    60   ~ 0
+LEDSignal
+Wire Wire Line
+	5100 4150 4950 4150
+Text Label 5100 4900 0    60   ~ 0
+GPIO_0
+Text Label 5100 5000 0    60   ~ 0
+GPIO_1
+Text Label 5100 5100 0    60   ~ 0
+GPIO_2
+Text Label 5100 5200 0    60   ~ 0
+GPIO_3
+Text Label 5100 5300 0    60   ~ 0
+GPIO_4
+Text Label 5100 5400 0    60   ~ 0
+GPIO_5
+Text Label 5100 5500 0    60   ~ 0
+GPIO_6
+Text Label 5100 5600 0    60   ~ 0
+GPIO_7
+Text Label 6900 4900 0    60   ~ 0
+GPIO_0
+Text Label 6900 5000 0    60   ~ 0
+GPIO_1
+Text Label 6900 5100 0    60   ~ 0
+GPIO_2
+Text Label 6900 5200 0    60   ~ 0
+GPIO_3
+Text Label 6900 5300 0    60   ~ 0
+GPIO_4
+Text Label 6900 5400 0    60   ~ 0
+GPIO_5
+Text Label 6900 5500 0    60   ~ 0
+GPIO_6
+Text Label 6900 5600 0    60   ~ 0
+GPIO_7
+$Comp
+L Conn_01x10 J3
+U 1 1 5AA4FF19
+P 6550 5300
+F 0 "J3" H 6550 5800 50  0000 C CNN
+F 1 "GPIO Header" V 6650 5300 50  0000 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch1.00mm" H 6550 5300 50  0001 C CNN
+F 3 "" H 6550 5300 50  0001 C CNN
+	1    6550 5300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 5600 6750 5600
+Wire Wire Line
+	6750 5500 6900 5500
+Wire Wire Line
+	6900 4900 6750 4900
+Wire Wire Line
+	6750 5000 6900 5000
+Wire Wire Line
+	6900 5100 6750 5100
+Wire Wire Line
+	6750 5200 6900 5200
+Wire Wire Line
+	6900 5300 6750 5300
+Wire Wire Line
+	6750 5400 6900 5400
+$Comp
+L VCC #PWR13
+U 1 1 5AA50405
+P 6950 4700
+F 0 "#PWR13" H 6950 4550 50  0001 C CNN
+F 1 "VCC" H 6950 4850 50  0000 C CNN
+F 2 "" H 6950 4700 50  0001 C CNN
+F 3 "" H 6950 4700 50  0001 C CNN
+	1    6950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 4800 6950 4800
+Wire Wire Line
+	6950 4800 6950 4700
+$Comp
+L GND #PWR16
+U 1 1 5AA504CD
+P 6950 5800
+F 0 "#PWR16" H 6950 5550 50  0001 C CNN
+F 1 "GND" H 6950 5650 50  0000 C CNN
+F 2 "" H 6950 5800 50  0001 C CNN
+F 3 "" H 6950 5800 50  0001 C CNN
+	1    6950 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 5700 6950 5700
+Wire Wire Line
+	6950 5700 6950 5800
+Wire Notes Line
+	6150 4400 7500 4400
+Wire Notes Line
+	7500 4400 7500 6250
+Wire Notes Line
+	7500 6250 6150 6250
+Wire Notes Line
+	6150 6250 6150 4400
+Text Notes 7450 6200 2    60   ~ 0
+GPIO Header
+Wire Wire Line
+	4950 4900 5100 4900
+Wire Wire Line
+	5100 5000 4950 5000
+Wire Wire Line
+	4950 5100 5100 5100
+Wire Wire Line
+	5100 5200 4950 5200
+Wire Wire Line
+	4950 5300 5100 5300
+Wire Wire Line
+	5100 5400 4950 5400
+Wire Wire Line
+	4950 5500 5100 5500
+Wire Wire Line
+	5100 5600 4950 5600
+NoConn ~ 4950 4250
+NoConn ~ 4950 4350
+NoConn ~ 4950 4450
+NoConn ~ 4950 4550
+NoConn ~ 4950 4650
+NoConn ~ 4950 3300
+NoConn ~ 4950 3400
+NoConn ~ 4950 3500
+Wire Wire Line
+	4950 4000 5050 4000
+Wire Wire Line
+	5050 3900 4950 3900
+Text Label 5050 4000 0    60   ~ 0
+XTAL2
+Text Label 5050 3900 0    60   ~ 0
+XTAL1
+Text Notes 10350 4150 2    60   ~ 0
+Power Switch
+Wire Notes Line
+	8750 4200 8750 3400
+Wire Notes Line
+	10400 4200 8750 4200
+Wire Notes Line
+	10400 3400 10400 4200
+Wire Notes Line
+	8750 3400 10400 3400
+Wire Wire Line
+	9050 3750 9250 3750
+$Comp
+L +3.3V #PWR14
+U 1 1 5AA4F6AC
+P 9050 3750
+F 0 "#PWR14" H 9050 3600 50  0001 C CNN
+F 1 "+3.3V" H 9050 3890 50  0000 C CNN
+F 2 "" H 9050 3750 50  0001 C CNN
+F 3 "" H 9050 3750 50  0001 C CNN
+	1    9050 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	9850 3750 10050 3750
+$Comp
+L VCC #PWR15
+U 1 1 5AA4F13A
+P 10050 3750
+F 0 "#PWR15" H 10050 3600 50  0001 C CNN
+F 1 "VCC" H 10050 3900 50  0000 C CNN
+F 2 "" H 10050 3750 50  0001 C CNN
+F 3 "" H 10050 3750 50  0001 C CNN
+	1    10050 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L SW_DIP_x01 SW2
+U 1 1 5AA4F08E
+P 9550 3750
+F 0 "SW2" H 9550 3900 50  0000 C CNN
+F 1 "SW_DIP_x01" H 9550 3600 50  0000 C CNN
+F 2 "Buttons_Switches_THT:SW_DIP_x1_W7.62mm_Piano" H 9550 3750 50  0001 C CNN
+F 3 "" H 9550 3750 50  0001 C CNN
+	1    9550 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 8700 5750 2    60   ~ 0
+Clock Circuit
+Wire Notes Line
+	7700 4400 8750 4400
+Wire Notes Line
+	7700 5800 7700 4400
+Wire Notes Line
+	8750 5800 7700 5800
+Wire Notes Line
+	8750 4400 8750 5800
+Connection ~ 8500 4800
+Connection ~ 7900 4800
+Connection ~ 8200 5300
+Wire Wire Line
+	8200 5300 8200 5400
+Wire Wire Line
+	8500 5300 8500 5200
+Wire Wire Line
+	7900 5300 8500 5300
+Wire Wire Line
+	7900 5200 7900 5300
+Wire Wire Line
+	8500 4700 8500 4900
+Wire Wire Line
+	8350 4800 8500 4800
+Wire Wire Line
+	7900 4700 7900 4900
+Wire Wire Line
+	8050 4800 7900 4800
+$Comp
+L C C5
+U 1 1 5AA47EF3
+P 7900 5050
+F 0 "C5" H 7950 5150 50  0000 L CNN
+F 1 "22pF" H 7700 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 7938 4900 50  0001 C CNN
+F 3 "" H 7900 5050 50  0001 C CNN
+	1    7900 5050
+	-1   0    0    1   
+$EndComp
+Text Label 8500 4700 1    60   ~ 0
+XTAL2
+Text Label 7900 4700 1    60   ~ 0
+XTAL1
+$Comp
+L C C6
+U 1 1 5AA45D60
+P 8500 5050
+F 0 "C6" H 8550 5150 50  0000 L CNN
+F 1 "22pF" H 8300 5150 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0805" H 8538 4900 50  0001 C CNN
+F 3 "" H 8500 5050 50  0001 C CNN
+	1    8500 5050
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR10
+U 1 1 5AA45C56
+P 8200 5400
+F 0 "#PWR10" H 8200 5150 50  0001 C CNN
+F 1 "GND" H 8200 5250 50  0000 C CNN
+F 2 "" H 8200 5400 50  0001 C CNN
+F 3 "" H 8200 5400 50  0001 C CNN
+	1    8200 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Crystal Y1
+U 1 1 5AA45383
+P 8200 4800
+F 0 "Y1" H 8200 4950 50  0000 C CNN
+F 1 "Crystal" H 8200 4650 50  0000 C CNN
+F 2 "Crystals:Crystal_AT310_d3.0mm_l10.0mm_Horizontal" H 8200 4800 50  0001 C CNN
+F 3 "" H 8200 4800 50  0001 C CNN
+	1    8200 4800
+	1    0    0    -1  
+$EndComp
+NoConn ~ 4950 4750
+NoConn ~ 4950 3800
+NoConn ~ 4950 3700
+NoConn ~ 4950 3600
+Text Notes 3550 1700 0    197  ~ 39
+!!! Do not build this circuit !!!\n     – It doesn't work –
+$EndSCHEMATC
