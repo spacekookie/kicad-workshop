@@ -1,24 +1,13 @@
 # Symmetrical Waffle
 
-A small and fun project to learn making PCBs with KiCAD.
+(Name picked by Github random name generator 😉)
 
-1. Make WS2812b schematic
-2. Put schematic for board togther
-  - Use AtMega 328
-  - Use simple external FTDI programmer interface
-  - Put LEDs on subsheet
-3. Annotate schematic
-4. Make WS2812b footprint
-5. Associate footprints to schematics
-6. Generate netlist
-7. Lay out board
+This is the complete version of the example project. You can get this manufactured, provided you find switches and a clock that will fit the specifications of the board. This does not include a BOM (Bill of Material).
 
+## Components
 
-## Schools
+ - AtMega 328
+ - 12 ws2812b (Neopixel) LED's
+ - Programming logic
+ - Clock crystal
 
-One library per
-
- - Project
- - Type
- - Manufacturer
- - Part
