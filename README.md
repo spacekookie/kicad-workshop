@@ -31,8 +31,8 @@ There are two examples in this repository: **symwaf** (Github name generator str
 
 For this example there are some step-by-step instructions.
 
-- Creating a [schematic symbol]()
-- Creating a [footprint]()
+- Creating a [schematic symbol](slides/symbol/kicad_symbol.pdf)
+- Creating a [footprint](slides/footprint/kicad_footprint.pdf)
 
 
 ## Alternative Project ideas
