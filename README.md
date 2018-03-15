@@ -1,28 +1,27 @@
 # Adaconf KiCAD & OpenHardware workshop
 
-This is a temporary text and will be replaced. Meow!
-
-## Outline
-
-- [ ] What is PCB design? What is KiCAD?
-- [ ] What does "Open Hardware" mean?
-- [ ] Installing KiCAD
-- [ ] Introduce the workflow
-- [ ] Make a schematic
-- [ ] Assign footprints
-- [ ] Make a PCB
-- [ ] Talk about exporting standards
-- [ ] Talk about board houses
-- [ ] Patching a design (aka revisions)
-- [ ] Library management
+This repository documents the KiCAD & OpenHardware workshop given at AdaConf_1. It contains two example projects, documentation as well as the introduction slides shown at the workshop. Further down this README there are alternative project ideas, if you don't like the example projects.
 
 
-## Things to do
+## Installing KiCAD
 
-- [ ] Research into how other people do library management
-- [ ] Gather links for installing
-- [ ] Come up with a fun and not too complex started project
-- [ ] Gather additional resources for open hardware
-- [ ] Make some slides
-- [ ] Make a reference project
-- [ ] Stuff
+KiCAD is free & open source software and can be downloaded from [kicad-pcb.org](http://kicad-pcb.org/download/). It is available on Linux, MacOS and Windows as pre-built binaries. On Linux there are packages for multiple distributions.
+
+The workshop assumes usage of `Kicad 4.0.7`.
+
+If you encounter any issues during installation, check the official [troubleshooting guide](http://kicad-pcb.org/help/known-system-related-issues/) for help.
+
+
+## Examples
+
+There are two examples in this repository: `symmetrical-waffle` simple and complete. Note that you should not attempt to build the simple version! It's missing a few core components that make it programmable. It's only meant as an example. The `complete` variant can also be programmed.
+
+**Simple Project**
+
+- [Schematic](examples/symwaf_simple/schematic.pdf)
+- [Board layout](examples/symwaf_simple/circuitboard.pdf)
+
+**Complete Project**
+
+- [Schematic](examples/symwaf_simple/schematic.pdf)
+- [Board layout](examples/symwaf_simple/circuitboard.pdf)
