@@ -2,6 +2,8 @@
 
 This repository documents the KiCAD & OpenHardware workshop given at AdaConf_1. It contains two example projects, documentation as well as the introduction slides shown at the workshop. Further down this README there are alternative project ideas, if you don't like the example projects.
 
+**Follow the slides along [here](slides/kicad_intro.pdf)**
+
 
 ## Installing KiCAD
 
