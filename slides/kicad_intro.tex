@@ -23,10 +23,10 @@
       \item Working with schematics and boards
       \item Updating designs
     \end{itemize}
-    \item Project Management
+    \item Best Practises
     \begin{itemize}
       \item Datasheets
-      \item Multiple schematic files
+      \item Project management
       \item Library/ Parts management
     \end{itemize}
   \end{itemize}
@@ -38,8 +38,16 @@
   \frametitle{Introduction}
   \begin{itemize}
     \item Components, Boards and Firmware
-    \item Open Hardware addresses entire stack
     \item Board (PCB) design is "drawing"
+    \item Open Hardware guideline
+      \begin{itemize}
+        \item Schematics, Boards, Symbols, Footprints (as CAD files!)
+        \item Bill of material
+        \item Firmware (if any)
+        \item Mechanical CAD files (if any)
+        \item Documentation
+        \item Non-commertial license
+      \end{itemize}
   \end{itemize}
 
   \begin{figure}[H]
@@ -47,7 +55,6 @@
     \includegraphics[width=0.45\textwidth]{images/pcb_on_paper.jpg}
     \includegraphics[width=0.45\textwidth]{images/pcb_in_kicad.jpg}
   \end{figure}
-
 \end{frame}
 
 
@@ -107,6 +114,11 @@
     \item Associate footprints
     \item Export Netlist
   \end{itemize}
+
+  \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.95\textwidth]{images/kicad_schematic_workflow.png}
+  \end{figure}
 \end{frame}
 
 
@@ -115,9 +127,46 @@
   \frametitle{Board Layout}
   \begin{itemize}
     \item Import Netlist
+    \begin{itemize}
+      \item Imports component footprints
+      \item Can replace/ update/ remove old footprints
+      \item Import new Netlist for each revision
+    \end{itemize}
     \item Layout components
     \item Route traces
     \item Export
+    \begin{itemize}
+      \item Gerber files (traces)
+      \item Drill holes (holes, edge cuts)
+      \item (Optional) Bill of Materials
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}
+  \frametitle{Best Practises}
+  \begin{itemize}
+    \item Schematics
+    \begin{itemize}
+      \item Group components into segments (in nice boxes)
+      \item Put large segments onto sub-sheets
+      \item Use labels to connect segments together
+    \end{itemize}
+    
+    \item Store required libraries in project
+    \item Include datasheets for components
+
+    \begin{figure}[H]
+    \centering
+    \includegraphics[width=0.50\textwidth]{images/kicad_schematic_bad.png}
+    \caption{Avoid doing this!}
+  \end{figure}
   \end{itemize}
 \end{frame}
 
@@ -134,6 +183,32 @@
       \item Example usage
       \item Pin-out
       \item Footprint size
+    \end{itemize}
+  \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Best Practises: Library Management}
+  \begin{itemize}
+    \item Three types of libraries
+    \begin{itemize}
+      \item Schematic symbols (.lib)
+      \item Component footprints (.pretty)
+      \item (Optional) 3D models (.3dshapes)
+    \end{itemize}
+    \item Different approaches to library management
+    \begin{itemize}
+      \item Each have their pro's and con's
+      \item No "standard" way of doing it
+      \item One library per ...
+      \begin{itemize}
+        \item Project
+        \item Component type
+        \item Manufacturer
+        \item Individual component
+      \end{itemize}
     \end{itemize}
   \end{itemize}
 \end{frame}
