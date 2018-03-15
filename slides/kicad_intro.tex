@@ -1,10 +1,10 @@
 \documentclass{beamer}
 \begin{document}
-\title{Introduction to\\KiCAD \& Open Hardware}   
-\author{Katharina Fey} 
-\date{17. March 2018} 
+\title{Introduction to\\KiCAD \& Open Hardware}
+\author{Katharina Fey}
+\date{17. March 2018}
 
-\frame{\titlepage} 
+\frame{\titlepage}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,7 +36,21 @@
 \begin{frame}
   \frametitle{Introduction}
   \begin{itemize}
-    \item 
+    \item Components, Boards and Firmware
+    \item Open Hardware addresses entire stack
+    \item Board (PCB) design is "drawing"
+  \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{KiCAD}
+  \begin{itemize}
+    \item Developed by CERN
+    \item Current version 4.0.*
+    \item Next version (5.0) just around the corner
+    \item Open ecosystem around components \& footprints
   \end{itemize}
 \end{frame}
 
@@ -44,12 +58,47 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
   \frametitle{Workflow}
+  \begin{itemize}
+    \item Schematics (represent Circuits)
+    \item Associate Footprints
+    \item Layout boards \& route traces
+    \item Repeat for iterations
+  \end{itemize}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{frame}
-  \frametitle{Project Management}
+  \frametitle{Schematics}
+  \begin{itemize}
+    \item Symbols (Create missing symbols)
+    \item Labels
+    \item Connections
+  \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Schematics Workflow}
+  \begin{itemize}
+    \item Create circuit schematic
+    \item Annotate (Give components unique names)
+    \item Associate footprints
+    \item Export Netlist
+  \end{itemize}
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}
+  \frametitle{Board Layout}
+  \begin{itemize}
+    \item Import Netlist
+    \item Layout components
+    \item Route traces
+    \item Export
+  \end{itemize}
 \end{frame}
 
 
