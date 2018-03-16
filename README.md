@@ -16,7 +16,7 @@ If you encounter any issues during installation, check the official [troubleshoo
 
 ## Examples
 
-There are two examples in this repository: **symwaf** (Github name generator strikes again) `simple` and `complete`. Note that you should not attempt to build the simple version! It's missing a few core components that make it programmable. It's only meant as an example. The `complete` variant can also be programmed.
+There are two examples in this repository: **symwaf** `simple` and `complete`. Note that you should not attempt to manufacture the simple version! It's missing a few core components that make it programmable. It's only meant as an example. The `complete` variant can also be programmed.
 
 **Simple Project**
 
