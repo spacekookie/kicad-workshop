@@ -39,5 +39,5 @@ For this example there are some step-by-step instructions.
 
 Don't like the provided example? Would rather make something from scratch? Here's a few project ideas, including some basic planning docs and datasheets.
 
-- [Shifty](), a shift-register and timer based blinking toy
-- [Basic Amplifier](), a simple audio amplifier for headphones
+- [Shifty](examples/shifty), a shift-register and timer based blinking toy
+- [Basic Amplifier](examples/audio), a simple audio amplifier for headphones
